@@ -1,0 +1,100 @@
+<projectSpec>
+    <project compilerBuildOptions="-I${PROJECT_LOC} -I${PROJECT_LOC}/driverlib/MSP430FR5xx_6xx --gcc --advice:power=&quot;none&quot;"
+             linkerCommandFile="lnk_msp430fr5969"
+             device="MSP430FR5969"
+             name="430BOOST-SHARP96_ULP_FRAM_16KB"
+             postBuildStep="&quot;${CG_TOOL_HEX}&quot; --ti_txt &quot;${BuildArtifactFileName}&quot; -o &quot;${BuildArtifactFileBaseName}.txt&quot; -order MS -romwidth 16">
+        <file action="copy" path="../CTS/CTS_HAL.c" targetDirectory="CTS" excludeFromBuild="true" />
+        <file action="copy" path="../CTS/CTS_HAL.h" targetDirectory="CTS" />
+        <file action="copy" path="../CTS/CTS_Layer.c" targetDirectory="CTS" excludeFromBuild="true" />
+        <file action="copy" path="../CTS/CTS_Layer.h" targetDirectory="CTS" />
+        <file action="copy" path="../CTS/CTS_wolverine.c" targetDirectory="CTS" excludeFromBuild="true" />
+        <file action="copy" path="../CTS/CTS_wolverine.h" targetDirectory="CTS" />
+        <file action="copy" path="../CTS/structure.c" targetDirectory="CTS" excludeFromBuild="true" />
+        <file action="copy" path="../CTS/structure.h" targetDirectory="CTS" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/deprecated" targetDirectory="driverlib/MSP430FR5xx_6xx" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/inc" targetDirectory="driverlib/MSP430FR5xx_6xx" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/adc12_b.c" targetDirectory="driverlib/MSP430FR5xx_6xx" excludeFromBuild="true" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/adc12_b.h" targetDirectory="driverlib/MSP430FR5xx_6xx" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/aes256.c" targetDirectory="driverlib/MSP430FR5xx_6xx" excludeFromBuild="true" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/aes256.h" targetDirectory="driverlib/MSP430FR5xx_6xx" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/comp_e.c" targetDirectory="driverlib/MSP430FR5xx_6xx" excludeFromBuild="true" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/comp_e.h" targetDirectory="driverlib/MSP430FR5xx_6xx" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/crc.c" targetDirectory="driverlib/MSP430FR5xx_6xx" excludeFromBuild="true" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/crc.h" targetDirectory="driverlib/MSP430FR5xx_6xx" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/cs.c" targetDirectory="driverlib/MSP430FR5xx_6xx" excludeFromBuild="true" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/cs.h" targetDirectory="driverlib/MSP430FR5xx_6xx" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/dma.c" targetDirectory="driverlib/MSP430FR5xx_6xx" excludeFromBuild="true" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/dma.h" targetDirectory="driverlib/MSP430FR5xx_6xx" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/driverlib.h" targetDirectory="driverlib/MSP430FR5xx_6xx" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/eusci_a_spi.c" targetDirectory="driverlib/MSP430FR5xx_6xx" excludeFromBuild="true" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/eusci_a_spi.h" targetDirectory="driverlib/MSP430FR5xx_6xx" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/eusci_a_uart.c" targetDirectory="driverlib/MSP430FR5xx_6xx" excludeFromBuild="true" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/eusci_a_uart.h" targetDirectory="driverlib/MSP430FR5xx_6xx" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/eusci_b_i2c.c" targetDirectory="driverlib/MSP430FR5xx_6xx" excludeFromBuild="true" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/eusci_b_i2c.h" targetDirectory="driverlib/MSP430FR5xx_6xx" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/eusci_b_spi.c" targetDirectory="driverlib/MSP430FR5xx_6xx" excludeFromBuild="true" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/eusci_b_spi.h" targetDirectory="driverlib/MSP430FR5xx_6xx" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/fram.c" targetDirectory="driverlib/MSP430FR5xx_6xx" excludeFromBuild="true" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/fram.h" targetDirectory="driverlib/MSP430FR5xx_6xx" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/gpio.c" targetDirectory="driverlib/MSP430FR5xx_6xx" excludeFromBuild="true" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/gpio.h" targetDirectory="driverlib/MSP430FR5xx_6xx" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/mpu.c" targetDirectory="driverlib/MSP430FR5xx_6xx" excludeFromBuild="true" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/mpu.h" targetDirectory="driverlib/MSP430FR5xx_6xx" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/mpy32.c" targetDirectory="driverlib/MSP430FR5xx_6xx" excludeFromBuild="true" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/mpy32.h" targetDirectory="driverlib/MSP430FR5xx_6xx" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/pmm.c" targetDirectory="driverlib/MSP430FR5xx_6xx" excludeFromBuild="true" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/pmm.h" targetDirectory="driverlib/MSP430FR5xx_6xx" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/ref_a.c" targetDirectory="driverlib/MSP430FR5xx_6xx" excludeFromBuild="true" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/ref_a.h" targetDirectory="driverlib/MSP430FR5xx_6xx" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/rtc_b.c" targetDirectory="driverlib/MSP430FR5xx_6xx" excludeFromBuild="true" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/rtc_b.h" targetDirectory="driverlib/MSP430FR5xx_6xx" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/sfr.c" targetDirectory="driverlib/MSP430FR5xx_6xx" excludeFromBuild="true" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/sfr.h" targetDirectory="driverlib/MSP430FR5xx_6xx" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/sys.c" targetDirectory="driverlib/MSP430FR5xx_6xx" excludeFromBuild="true" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/sys.h" targetDirectory="driverlib/MSP430FR5xx_6xx" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/timer_a.c" targetDirectory="driverlib/MSP430FR5xx_6xx" excludeFromBuild="true" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/timer_a.h" targetDirectory="driverlib/MSP430FR5xx_6xx" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/timer_b.c" targetDirectory="driverlib/MSP430FR5xx_6xx" excludeFromBuild="true" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/timer_b.h" targetDirectory="driverlib/MSP430FR5xx_6xx" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/tlv.c" targetDirectory="driverlib/MSP430FR5xx_6xx" excludeFromBuild="true" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/tlv.h" targetDirectory="driverlib/MSP430FR5xx_6xx" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/wdt_a.c" targetDirectory="driverlib/MSP430FR5xx_6xx" excludeFromBuild="true" />
+        <file action="copy" path="../driverlib/MSP430FR5xx_6xx/wdt_a.h" targetDirectory="driverlib/MSP430FR5xx_6xx" />
+        <file action="copy" path="../grlib/grlib/circle.c" targetDirectory="grlib/grlib" excludeFromBuild="true" />
+        <file action="copy" path="../grlib/grlib/context.c" targetDirectory="grlib/grlib" excludeFromBuild="true" />
+        <file action="copy" path="../grlib/grlib/fontcmss12.c" targetDirectory="grlib/grlib" excludeFromBuild="true" />
+        <file action="copy" path="../grlib/grlib/fontcmss32.c" targetDirectory="grlib/grlib" excludeFromBuild="true" />
+        <file action="copy" path="../grlib/grlib/grlib.h" targetDirectory="grlib/grlib" />
+        <file action="copy" path="../grlib/grlib/image.c" targetDirectory="grlib/grlib" excludeFromBuild="true" />
+        <file action="copy" path="../grlib/grlib/line.c" targetDirectory="grlib/grlib" excludeFromBuild="true" />
+        <file action="copy" path="../grlib/grlib/rectangle.c" targetDirectory="grlib/grlib" excludeFromBuild="true" />
+        <file action="copy" path="../grlib/grlib/string.c" targetDirectory="grlib/grlib" excludeFromBuild="true" />
+        <file action="copy" path="../grlib/sharp96x96.c" targetDirectory="grlib" />
+        <file action="copy" path="../grlib/sharp96x96.h" targetDirectory="grlib" />
+        <file action="copy" path="../grlib/Sharp96x96utils.asm" targetDirectory="grlib" excludeFromBuild="true" />
+        <file action="copy" path="../grlib/Sharp96x96utils.h" targetDirectory="grlib" />
+        <file action="copy" path="../grlib/Sharp96x96utils.s" targetDirectory="grlib" />
+        <file action="copy" path="../Preloaded_Images/" />
+        <file action="copy" path="../ActivePowerMeasure.c" />
+        <file action="copy" path="../ActivePowerMeasure.h" />
+        <file action="copy" path="../ClockApp.c" />
+        <file action="copy" path="../ClockApp.h" />
+        <file action="copy" path="../FR59xx_EXP.c" />
+        <file action="copy" path="../FR59xx_EXP.h" />
+        <file action="copy" path="../FRAMSpeedApp.c" />
+        <file action="copy" path="../FRAMSpeedApp.h" />
+        <file action="copy" path="../Game.c" />
+        <file action="copy" path="../Game.h" />
+        <file action="copy" path="../msp430fr59xx_CHR.asm" />
+        <file action="copy" path="../msp430fr59xx_CHR.h" />
+        <file action="copy" path="../myTimer.c" />
+        <file action="copy" path="../myTimer.h" />
+        <file action="copy" path="../ULPMeter.c" />
+        <file action="copy" path="../ULPMeter.h" />
+        <file action="copy" path="../UpdateDisplay.c" excludeFromBuild="true" />
+        <file action="copy" path="../UpdateDisplay.h" />
+        <file action="copy" path="430BOOST-SHARP96_ULP_FRAM_Lib.lib" />
+        <file action="copy" path="lnk_msp430fr5969.cmd" />
+    </project>
+</projectSpec>

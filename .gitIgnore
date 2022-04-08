@@ -1,0 +1,15 @@
+.pypirc
+*.pyc
+*~
+GPATH
+GRTAGS
+GTAGS
+esptool.egg-info
+.eggs
+build
+dist
+local.mk
+libraries
+
+.envrc
+report.xml

@@ -1,0 +1,43 @@
+<projectSpec>
+  <project compilerBuildOptions="-O3 -I${PROJECT_ROOT}\driverlib\MSP430FR5xx_6xx -I${PROJECT_ROOT} -I${PROJECT_ROOT}\grlib -I${PROJECT_ROOT}\fonts -I${PROJECT_ROOT}\LcdDriver -I${PROJECT_ROOT}\images --advice:power=&quot;none&quot; --large_memory_model" 
+           device="MSP430FR5969"
+           name="430BOOST-SHARP96_GrlibExample_FR5969"
+           postBuildStep="&quot;${CG_TOOL_HEX}&quot; --ti_txt &quot;${BuildArtifactFileName}&quot; -o &quot;${BuildArtifactFileBaseName}.txt&quot; -order MS -romwidth 16" >
+	<file action="copy" path="..\main.c" targetDirectory="." />
+    <file action="copy" path="..\system_pre_init.c" targetDirectory="." />
+	<file action="copy" path="..\driverlibHeaders.h" targetDirectory="." />
+	<file action="copy" path="..\LcdDriver\Sharp96x96.c" targetDirectory="LcdDriver" />
+	<file action="copy" path="..\LcdDriver\Sharp96x96.h" targetDirectory="LcdDriver" />
+	<file action="copy" path="..\LcdDriver\HAL_MSP-EXP430FR5969_Sharp96x96.c" targetDirectory="LcdDriver" />
+	<file action="copy" path="..\LcdDriver\HAL_MSP-EXP430FR5969_Sharp96x96.h" targetDirectory="LcdDriver" />
+	<file action="copy" path="..\grlib\circle.c" targetDirectory="grlib" />
+	<file action="copy" path="..\grlib\context.c" targetDirectory="grlib" />
+	<file action="copy" path="..\grlib\grlib.h" targetDirectory="grlib" />
+	<file action="copy" path="..\grlib\image.c" targetDirectory="grlib" />
+	<file action="copy" path="..\grlib\line.c" targetDirectory="grlib" />
+	<file action="copy" path="..\grlib\rectangle.c" targetDirectory="grlib" />
+	<file action="copy" path="..\grlib\string.c" targetDirectory="grlib" />
+	<file action="copy" path="..\fonts\fontfixed6x8.c" targetDirectory="fonts" />
+	<file action="copy" path="..\images\images.h" targetDirectory="images" />
+	<file action="copy" path="..\images\LPRocket_96x37.c" targetDirectory="images" />
+	<file action="copy" path="..\images\TI_Logo_69x64.c" targetDirectory="images" />
+    <file action="copy" path="..\driverlib\MSP430FR5xx_6xx\eusci_b_spi.c" targetDirectory="driverlib\MSP430FR5xx_6xx" />
+    <file action="copy" path="..\driverlib\MSP430FR5xx_6xx\eusci_b_spi.h" targetDirectory="driverlib\MSP430FR5xx_6xx" />
+    <file action="copy" path="..\driverlib\MSP430FR5xx_6xx\cs.c" targetDirectory="driverlib\MSP430FR5xx_6xx" />
+    <file action="copy" path="..\driverlib\MSP430FR5xx_6xx\cs.h" targetDirectory="driverlib\MSP430FR5xx_6xx" />
+    <file action="copy" path="..\driverlib\MSP430FR5xx_6xx\gpio.c" targetDirectory="driverlib\MSP430FR5xx_6xx" />
+    <file action="copy" path="..\driverlib\MSP430FR5xx_6xx\gpio.h" targetDirectory="driverlib\MSP430FR5xx_6xx" />
+    <file action="copy" path="..\driverlib\MSP430FR5xx_6xx\timer_a.c" targetDirectory="driverlib\MSP430FR5xx_6xx" />
+    <file action="copy" path="..\driverlib\MSP430FR5xx_6xx\timer_a.h" targetDirectory="driverlib\MSP430FR5xx_6xx" />
+    <file action="copy" path="..\driverlib\MSP430FR5xx_6xx\pmm.c" targetDirectory="driverlib\MSP430FR5xx_6xx" />
+    <file action="copy" path="..\driverlib\MSP430FR5xx_6xx\pmm.h" targetDirectory="driverlib\MSP430FR5xx_6xx" />
+    <file action="copy" path="..\driverlib\MSP430FR5xx_6xx\wdt_a.c" targetDirectory="driverlib\MSP430FR5xx_6xx" />
+    <file action="copy" path="..\driverlib\MSP430FR5xx_6xx\wdt_a.h" targetDirectory="driverlib\MSP430FR5xx_6xx" />
+    <file action="copy" path="..\driverlib\MSP430FR5xx_6xx\deprecated\CCS\in430.h" targetDirectory="driverlib\MSP430FR5xx_6xx\deprecated\CCS" />
+    <file action="copy" path="..\driverlib\MSP430FR5xx_6xx\deprecated\CCS\msp430xgeneric.h" targetDirectory="driverlib\MSP430FR5xx_6xx\deprecated\CCS" />
+    <file action="copy" path="..\driverlib\MSP430FR5xx_6xx\inc\hw_memmap.h" targetDirectory="driverlib\MSP430FR5xx_6xx\inc" />
+    <file action="copy" path="..\driverlib\MSP430FR5xx_6xx\inc\hw_regaccess.h" targetDirectory="driverlib\MSP430FR5xx_6xx\inc" />
+    <file action="copy" path="..\driverlib\MSP430FR5xx_6xx\inc\hw_types.h" targetDirectory="driverlib\MSP430FR5xx_6xx\inc" />
+    <buildVariable name="ORIGINAL_PROJECT_ROOT" scope="project" type="dir" value="." />
+  </project>
+</projectSpec>
